@@ -7,6 +7,38 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.1.0] - 2025-10-22
+
+### Updated 
+
+-   Updated to ardrive-core-js@3.1.0
+
+## [3.0.5] - 2025-10-16
+
+### Fixed
+
+-   Fixed contentType handling to use logical OR operator instead of nullish coalescing to properly fallback to MIME type detection from file extension
+
+## [3.0.4] - 2025-10-13
+
+### Fixed
+
+-   Correctly use seconds for Unix-Time Tag on ArFS Entities
+
+## [3.0.3] - 2025-08-01
+
+### Fixed
+
+-   Fixes manifest lastModifiedDate timestamp to be milliseconds instead of seconds
+
+## [3.0.2] - 2025-06-25
+
+### Changed
+
+-   Upload using turbo-sdk
+-   Use @ardrive/ardrive-promise-cache over Core implementation
+-   Updates several deps
+
 ## [3.0.1] - 2025-06-20
 
 ### Changed
