@@ -1152,6 +1152,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@noble/ciphers@npm:^2.0.1":
+  version: 2.1.1
+  resolution: "@noble/ciphers@npm:2.1.1"
+  checksum: 1e1bfcd8ccb6dce7df20f2ac0162fdea2a760f6f8159d2c4a3ed754734a58fc484ea4ed953a4fa16d590662e44b55282455bbc90c56455ab102d5462db81e6cc
+  languageName: node
+  linkType: hard
+
 "@noble/curves@npm:1.2.0":
   version: 1.2.0
   resolution: "@noble/curves@npm:1.2.0"
@@ -1204,6 +1211,13 @@ __metadata:
   version: 1.8.0
   resolution: "@noble/hashes@npm:1.8.0"
   checksum: c94e98b941963676feaba62475b1ccfa8341e3f572adbb3b684ee38b658df44100187fa0ef4220da580b13f8d27e87d5492623c8a02ecc61f23fb9960c7918f5
+  languageName: node
+  linkType: hard
+
+"@noble/hashes@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "@noble/hashes@npm:2.0.1"
+  checksum: aea67a671ca464027cd512d07666a804bd99abc343ba98c93ee8463a1c870c5594f8de468279ef3c60f3b23b6330db9f1a92bd23723b8a911ec73bddc9420248
   languageName: node
   linkType: hard
 
@@ -2245,7 +2259,7 @@ __metadata:
     "@types/source-map-support": ^0
     "@typescript-eslint/eslint-plugin": ^6.2.1
     "@typescript-eslint/parser": ^6.2.1
-    ardrive-core-js: 3.0.2
+    ardrive-core-js: 4.0.0
     arweave: 1.15.7
     axios: ^0.21.1
     chai: ^4.3.4
@@ -2272,13 +2286,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"ardrive-core-js@npm:3.0.2":
-  version: 3.0.2
-  resolution: "ardrive-core-js@npm:3.0.2"
+"ardrive-core-js@npm:4.0.0":
+  version: 4.0.0
+  resolution: "ardrive-core-js@npm:4.0.0"
   dependencies:
     "@ardrive/ardrive-promise-cache": ^1.1.4
     "@ardrive/turbo-sdk": ^1.0.1
     "@dha-team/arbundles": ^1.0.3
+    "@noble/ciphers": ^2.0.1
+    "@noble/hashes": ^2.0.1
     arweave: ^1.15.7
     axios: ^0.21.1
     axios-retry: ^3.6.0
@@ -2294,7 +2310,7 @@ __metadata:
     smartweave: ^0.4.49
     utf8: ^3.0.0
     uuid: ^9.0.1
-  checksum: 9194ec0c7b2103976a6800abf5e071eec3e2e2ab22b00491900a2c94e7aa4625eec5327e1c6136e2d4e9b7eafaadc96ee7d3e5dda63200d0fc03c5f572337c8f
+  checksum: 0daaf67eded0c5a09bebda0df132cd8e949e4545a14e62ddfd91d231560e9b506cd983a8f0d03be1ab9f8a6c819564ea0d037d1ffe7cc4e7f8f89d817ffffd36
   languageName: node
   linkType: hard
 
