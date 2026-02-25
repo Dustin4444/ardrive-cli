@@ -1,0 +1,36 @@
+name: Archive Dependencies for Release
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  archive-deps:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Read .nvmrc
+        id: node_version
+        run: echo "NODE_VERSION=$(cat .nvmrc)" >> "$GITHUB_OUTPUT"
+
+      - name: Set Up node
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ steps.node_version.outputs.NODE_VERSION }}
+          cache: 'yarn'
+
+      - name: Install dependencies
+        run: yarn --immutable
+
+      - name: Build
+        run: yarn build
+
+      - name: Archive dependency cache
+        run: tar -czf deps-${{ github.event.release.tag_name }}.tar.gz .yarn/cache
+
+      - name: Attach archive to release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload "${{ github.event.release.tag_name }}" deps-${{ github.event.release.tag_name }}.tar.gz
