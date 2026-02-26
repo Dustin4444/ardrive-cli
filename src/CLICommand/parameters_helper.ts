@@ -54,7 +54,7 @@ import { turboProdUrl } from 'ardrive-core-js/lib/utils/constants';
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type ParameterOptions = any;
 
-const DEFAULT_GATEWAY = 'https://arweave.net:443';
+const DEFAULT_GATEWAY = 'https://ardrive.net:443';
 const ARWEAVE_GATEWAY_ENV_VAR = 'ARWEAVE_GATEWAY';
 const TURBO_URL_ENV_VAR = 'TURBO_URL';
 

@@ -57,7 +57,8 @@ Sync
 #zero installs
 package-lock.json
 .yarn/*
-!.yarn/cache
+# .yarn/cache is no longer committed; deps are archived at release time
+# !.yarn/cache
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases

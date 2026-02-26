@@ -35,8 +35,7 @@ export { CLI_APP_VERSION };
 
 // TODO: Make configurable from CLI
 export const cliArweave = Arweave.init({
-	host: 'arweave.net', // Arweave Gateway
-	//host: 'arweave.dev', // Arweave Dev Gateway
+	host: 'ardrive.net',
 	port: 443,
 	protocol: 'https',
 	timeout: 600000
