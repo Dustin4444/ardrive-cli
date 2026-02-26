@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [4.0.0] - 2026-02-26
+
+### Updated
+
+-   Updated to ardrive-core-js@4.0.0
+-   Changed remaining hardcoded arweave.net references to ardrive.net
+
 ## [3.1.0] - 2025-10-22
 
 ### Updated 
